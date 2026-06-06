@@ -1,13 +1,13 @@
-import { Container, Button, ButtonGroup } from '@chakra-ui/react'
+import { Container, Button, ButtonGroup, Center } from '@chakra-ui/react'
 const Navbar = () => {
   return (
-    <Container spaceX={4}>
-      <ButtonGroup variant='ghost'>
-        <Button>Home</Button>
-        <Button>Expenses</Button>
-        <Button></Button>
-        <Button>Login</Button>
-      </ButtonGroup>
+    <Container spaceX={4} shadow='sm' w={60} rounded='lg'>
+      <Center>
+        <ButtonGroup variant='ghost' colorPalette='green' py={2} px={2}>
+          <Button color='green.600'>Login</Button>
+          <Button color='green.600'>Register</Button>
+        </ButtonGroup>
+      </Center>
     </Container>
   )
 }

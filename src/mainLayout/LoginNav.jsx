@@ -1,0 +1,29 @@
+import { Container, Button, ButtonGroup, Flex } from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom'
+const LoginNav = () => {
+  const navigate = useNavigate()
+  return (
+    <Container>
+      <ButtonGroup variant='ghost' colorPalette='green'>
+        <Flex direction='column' spaceY={2}>
+          <Button color='green.600' onClick={() => navigate('/Dashboard')}>
+            Dashboard
+          </Button>
+          <Button color='green.600' onClick={() => navigate('/properties')}>
+            Properties
+          </Button>
+          <Button color='green.600' onClick={() => navigate('/renovation')}>
+            Renovation
+          </Button>
+          <Button color='green.600' onClick={() => navigate('/tenants')}>
+            Tenants
+          </Button>
+          <Button color='green.600' onClick={() => navigate('/tenants')}>
+            Logout
+          </Button>
+        </Flex>
+      </ButtonGroup>
+    </Container>
+  )
+}
+export default LoginNav
