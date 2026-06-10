@@ -3,7 +3,13 @@ import { useNavigate } from 'react-router-dom'
 const LoginNav = () => {
   const navigate = useNavigate()
   return (
-    <Container>
+    <Container
+      colSpan={1}
+      borderWidth='1px'
+      rounded='md'
+      shadow='lg'
+      shadowColor='red'
+    >
       <ButtonGroup variant='ghost' colorPalette='green'>
         <Flex direction='column' spaceY={2}>
           <Button color='green.600' onClick={() => navigate('/Dashboard')}>

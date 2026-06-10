@@ -1,18 +1,28 @@
 import { Container, GridItem, SimpleGrid } from '@chakra-ui/react'
 import MainLayout from '../mainLayout/MainLayout'
-import { MainDash, RenovationDash } from '../components'
+import { MainDash, RenovationDash, DashNoti, Tenants } from '../components'
 const Dashboard = () => {
   return (
     <Container pt={12} h='100vh'>
-      <SimpleGrid columns={{ md: 8 }} spaceX={10}>
-        <GridItem colSpan={1} borderWidth='1px' borderColor='blackAlpha.300'>
+      <SimpleGrid columns={{ md: 8 }} spaceX={6}>
+        <GridItem>
           <MainLayout />
         </GridItem>
-        <GridItem colSpan={{ md: 5 }}>
-          <MainDash />
-        </GridItem>
-        <GridItem colSpan={{ md: 2 }}>
-          <RenovationDash />
+        <GridItem colSpan={{ md: 7 }}>
+          <SimpleGrid columns={{ md: 8 }}>
+            <GridItem colSpan={{ md: 6 }} pr={4}>
+              <MainDash />
+            </GridItem>
+            <GridItem colSpan={2}>
+              <DashNoti />
+            </GridItem>
+            <GridItem colSpan={{ md: 6 }} pr={4}>
+              <Tenants />
+            </GridItem>
+            <GridItem colSpan={2}>
+              <RenovationDash />
+            </GridItem>
+          </SimpleGrid>
         </GridItem>
       </SimpleGrid>
     </Container>
