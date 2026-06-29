@@ -1,12 +1,12 @@
 import { Container, GridItem, SimpleGrid } from '@chakra-ui/react'
-import MainLayout from '../mainLayout/MainLayout'
+import LoggedInSideBar from '../mainLayout/LoggedInSideBar'
 import { MainDash, RenovationDash, DashNoti, Tenants } from '../components'
 const Dashboard = () => {
   return (
     <Container pt={12} h='100vh'>
       <SimpleGrid columns={{ md: 8 }} spaceX={6}>
         <GridItem>
-          <MainLayout />
+          <LoggedInSideBar />
         </GridItem>
         <GridItem colSpan={{ md: 7 }}>
           <SimpleGrid columns={{ md: 8 }}>

@@ -1,10 +1,12 @@
 import { Outlet } from 'react-router-dom'
-import LoginNav from './LoginNav'
+import LoggedInNavbar from './LoggedInNavbar'
+import LoggedInFooter from './LoggedInFooter'
 const MainLayout = () => {
   return (
     <>
-      <LoginNav />
+      <LoggedInNavbar />
       <Outlet />
+      <LoggedInFooter />
     </>
   )
 }

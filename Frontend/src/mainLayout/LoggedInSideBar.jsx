@@ -1,6 +1,6 @@
 import { Container, Button, ButtonGroup, Flex } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
-const LoginNav = () => {
+const LoggedInSideBar = () => {
   const navigate = useNavigate()
   return (
     <Container
@@ -18,13 +18,13 @@ const LoginNav = () => {
           <Button color='green.600' onClick={() => navigate('/properties')}>
             Properties
           </Button>
-          <Button color='green.600' onClick={() => navigate('/renovation')}>
+          <Button color='green.600' onClick={() => navigate('/renovations')}>
             Renovation
           </Button>
           <Button color='green.600' onClick={() => navigate('/tenants')}>
             Tenants
           </Button>
-          <Button color='green.600' onClick={() => navigate('/tenants')}>
+          <Button color='green.600' onClick={() => navigate('/')}>
             Logout
           </Button>
         </Flex>
@@ -32,4 +32,4 @@ const LoginNav = () => {
     </Container>
   )
 }
-export default LoginNav
+export default LoggedInSideBar

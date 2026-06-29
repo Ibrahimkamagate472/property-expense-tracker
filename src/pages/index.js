@@ -1,6 +1,0 @@
-export { default as Home } from './Home'
-export { default as LoginPage } from './LoginPage'
-export { default as RegisterPage } from './RegisterPage'
-export { default as Tracker } from './Tracker'
-export { default as Dashboard } from './Dashboard'
-export { default as Properties } from './Properties'

@@ -45,6 +45,15 @@ const Register = () => {
 
           <ButtonGroup>
             <Button
+              variant='ghost'
+              color='green.600'
+              onClick={() => {
+                navigate('/login')
+              }}
+            >
+              Login
+            </Button>
+            <Button
               variant='subtle'
               color='green.600'
               onClick={() => {

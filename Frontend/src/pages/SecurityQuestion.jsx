@@ -28,11 +28,11 @@ const SecurityQuestion = () => {
           <Field.Root alignItems='center'>
             <Field.Label>1. Security question</Field.Label>
             <Field.RequiredIndicator />
-            <select>
-              <option>First pet name</option>
-              <option>Favorite teacher name</option>
-              <option>Mother's maiden name </option>
-              <option>Street of childhood home</option>
+            <select style={{ width: '300px' }}>
+              <option>What is your first pet name?</option>
+              <option>What’s your favorite teacher name?</option>
+              <option>What’s your mother's maiden name?</option>
+              <option>What’s your street of childhood home?</option>
             </select>
             <Input placeholder='Please enter your answer' w='300px' />
           </Field.Root>
@@ -41,17 +41,23 @@ const SecurityQuestion = () => {
             <Field.Label>2. Security question</Field.Label>
             <Field.RequiredIndicator />
             <Field.RequiredIndicator />
-            <select>
-              <option>First pet name</option>
-              <option>Favorite teacher name</option>
-              <option>Mother's maiden name </option>
-              <option>Street of childhood home</option>
+            <select style={{ width: '300px' }}>
+              <option>What is your oldest sibling’s middle name?</option>
+              <option>What was the first concert you attended?</option>
+              <option>What was the make and model of your first car?</option>
+              <option>What’s your favorite movie?</option>
             </select>
             <Input placeholder='Please enter your answer' w='300px' />
           </Field.Root>
 
           <ButtonGroup>
-            <Button variant='subtle' color='green.600'>
+            <Button
+              variant='subtle'
+              color='green.600'
+              onClick={() => {
+                navigate('/dashboard')
+              }}
+            >
               Create
             </Button>
           </ButtonGroup>

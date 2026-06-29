@@ -1,6 +1,6 @@
 import { Container, Button, ButtonGroup, Center } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
-const Navbar = () => {
+const NotLoggedInNavbar = () => {
   const navigate = useNavigate()
   return (
     <Container spaceX={4} shadow='sm' w={60} rounded='lg' mt={4}>
@@ -27,4 +27,4 @@ const Navbar = () => {
     </Container>
   )
 }
-export default Navbar
+export default NotLoggedInNavbar

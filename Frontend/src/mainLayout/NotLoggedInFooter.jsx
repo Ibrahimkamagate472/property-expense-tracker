@@ -1,7 +1,7 @@
 import { Container, Button, ButtonGroup, Center } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 
-const Footer = () => {
+const NotLoggedInFooter = () => {
   const navigate = useNavigate()
   return (
     <Container spaceX={4} shadow='sm'>
@@ -28,4 +28,4 @@ const Footer = () => {
     </Container>
   )
 }
-export default Footer
+export default NotLoggedInFooter
